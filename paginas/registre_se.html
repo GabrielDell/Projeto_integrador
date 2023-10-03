@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Registre-se</title>
+        <meta charset="utf-8" />
+        <meta rel="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="shortcut icon" type="image/x-icon" href="../imagens/LoL_icon.svg.png" />
+        <link rel="stylesheet" type="text/css" href="../css/formulario.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="cabecalho">
+                    <div id="menu">
+                            <a href="../index.html"> Home </a>
+                            <a href="../paginas/runeterra.html">Runeterra</a>
+                            <a href="../paginas/linhadotempo.html">Linha do tempo</a>
+                            <a href="../paginas/especies.html">Espécies</a>
+                            <a href="../paginas/personagens.html">Personagens</a>
+                            <a href="../paginas/locais_da_runeterra.html">Locais da Runeterra</a>
+                            <a href="../paginas/curiosidades.html">Curiosidades</a>
+                            <a href="../paginas/registre_se.html">Registre-se</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <article>
+                    <h1 align="center">Registro de usuário</h1>
+                    <br />
+                    <br />
+                    <form action="registro.php" method="post">
+                        <fieldset>
+                            <fieldset class="block">
+                                <div class="dados">
+                                    <label>E-mail</label>
+                                        <input type="text" id="email" name="email" required placeholder="nome@dominio.com" maxlength="55" />
+                                </div>
+                            </fieldset>
+                            <fieldset class="block">
+                                <div class="dados">
+                                    <label>Usuário</label>
+                                        <input type="text" id="usuario" name="usuario" required maxlength="30">
+                                </div>
+                            </fieldset>
+                            <fieldset class="block">
+                                <div class="dados">
+                                    <label>Senha</label>
+                                        <input type="password" id="senha" name="senha" required maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" /> 
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <input type="checkbox" id="checkbox" name="checknews" /><label>Mande-me email sobre noticias.</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="checkbox" id="checkbox" name="checkterm" /><label>Eu, aceito os termos de política de privacidade e os termos de uso do site.</label>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" class="botao" name="submit">
+                                    Registrar
+                                </button>
+                            </fieldset>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
